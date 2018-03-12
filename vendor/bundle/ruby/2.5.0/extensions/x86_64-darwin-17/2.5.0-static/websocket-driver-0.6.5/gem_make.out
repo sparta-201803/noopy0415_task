@@ -1,0 +1,15 @@
+current directory: /Users/obaranoriya/camp/noopy0415_task_v2/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/obaranoriya/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180312-26557-7o2gb8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/obaranoriya/camp/noopy0415_task_v2/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/obaranoriya/camp/noopy0415_task_v2/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/obaranoriya/camp/noopy0415_task_v2/vendor/bundle/ruby/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20180312-26557-1obokyv
