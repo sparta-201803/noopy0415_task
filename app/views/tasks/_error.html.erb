@@ -1,0 +1,10 @@
+<% if @task.errors.any? %>
+  <div id="error_explanation">
+    <h3>【エラー内容】</h3>
+    <ul>
+    <% @task.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

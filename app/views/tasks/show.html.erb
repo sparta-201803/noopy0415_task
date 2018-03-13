@@ -1,2 +1,14 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1>タスク詳細</h1>
+<p>
+  <b>【タイトル】</b><br>
+  <%= @task.title %>
+</p>
+<p>
+  <b>【内容】</b><br>
+  <%= @task.body %>
+</p>
+<div style="display:inline-flex">
+  <%= button_to '編集', {action: 'edit'}, {method: :get} %>
+  <%= button_to '削除', {action: 'destroy'}, {method: :delete} %>
+  <%= button_to '戻る', {action: 'index'}, {method: :get} %>
+</div>
