@@ -8,14 +8,4 @@
 <hr>
 <h2>タスク登録</h2>
 <%= render partial: 'error' %>
-<%= form_with model: @task, local: true do |form| %>
-  <p>
-    タイトル<br>
-    <%= form.text_field :title %>
-  </p>
-  <p>
-    内容<br>
-    <%= form.text_area :body %>
-  </p>
-  <%= form.submit "create task" %>
-<% end %>
+<%= render partial: 'form', locals:{act: "create"} %>

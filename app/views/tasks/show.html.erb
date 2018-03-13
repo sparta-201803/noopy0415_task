@@ -8,7 +8,7 @@
   <%= @task.body %>
 </p>
 <div style="display:inline-flex">
-  <%= button_to '編集', {action: 'edit'}, {method: :get} %>
-  <%= button_to '削除', {action: 'destroy'}, {method: :delete} %>
-  <%= button_to '戻る', {action: 'index'}, {method: :get} %>
+  <%= button_to "編集", edit_task_path(@task), method: :get %>
+  <%= button_to "削除", task_path(@task), method: :delete %>
+  <%= button_to "戻る", tasks_path, method: :get %>
 </div>

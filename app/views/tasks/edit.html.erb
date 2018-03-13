@@ -1,14 +1,4 @@
 <h1>タスク編集</h1>
 <%= render partial: 'error' %>
-<%= form_with model: @task, local: true do |form| %>
-  <p>
-    タイトル<br>
-    <%= form.text_field :title %>
-  </p>
-  <p>
-    内容<br>
-    <%= form.text_area :body %>
-  </p>
-  <%= form.submit "update_task" %>
-<% end %>
+<%= render partial: 'form', locals:{act: "update"} %>
 <%= button_to '詳細に戻る', {action: 'show'}, {method: :get} %>
