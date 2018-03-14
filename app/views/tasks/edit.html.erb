@@ -1,4 +1,4 @@
 <h1>タスク編集</h1>
 <%= render partial: 'error' %>
-<%= render partial: 'form', locals:{act: "update"} %>
-<%= button_to '詳細に戻る', {action: 'show'}, {method: :get} %>
+<%= render partial: 'form' %>
+<%= button_to '詳細に戻る', task_path(@task), method: :get %>
