@@ -1,0 +1,14 @@
+<h1>タスク詳細</h1>
+<p>
+  <b>【タイトル】</b><br>
+  <%= @task.title %>
+</p>
+<p>
+  <b>【内容】</b><br>
+  <%= @task.body %>
+</p>
+<div style="display:inline-flex">
+  <%= button_to "編集", edit_task_path(@task), method: :get %>
+  <%= button_to "削除", task_path(@task), method: :delete %>
+  <%= button_to "戻る", tasks_path, method: :get %>
+</div>
